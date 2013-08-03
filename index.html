@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8" />
+
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width" />
+<title>Welcome to Vergevision</title>
+
+<!-- Included CSS Files -->
+<link rel="stylesheet" href="stylesheets/style.css">
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="stylesheets/ie.css">
+<![endif]-->
+
+<script src="javascripts/modernizr.foundation.js"></script>
+<script type="text/javascript">
+    var imageArray = Array('image-1.jpg','image-2.jpg','image-3.jpg');
+    
+    function imageSwap()
+    {
+        randomNumber = Math.floor(Math.random()*imageArray.length);		
+        document.getElementById("background").src = "images/"+imageArray[randomNumber];
+    }
+</script>
+
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body onLoad="imageSwap()">
+<!--<div class="background-image"  id="background" >--> 
+<img src="images/image-1.jpg" id="background" alt="background image"/>
+<div class="pagewrap">
+  <div class="header-content"> <!--header content start here-->
+    <div class="header-block"> <!--header block start here-->
+      <div class="row collapse">
+        <div class="six columns left-header"><!-- left header start here-->
+          <div class="logo">
+            <h1 title="logo-image"><a href="#"><img src="images/logo.png" alt="logo image" width="269" height="29"/></a></h1>
+          </div>
+        </div>
+        <!--left header end here-->
+        <div class="six columns rihgt-header"><!-- right header start here-->
+          <div class="nav-bar"> <!--navigation start here-->
+            <ul>
+              <li class="active"><a href="index.html">home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="work.html">work</a></li>
+              <li><a href="blog.html">blog</a></li>
+            </ul>
+          </div>
+          <!--navigation end here--> 
+        </div>
+        <!--right header end here--> 
+      </div>
+    </div>
+    <!--header block end here--> 
+  </div>
+  <!--header content start here-->
+  
+  <div class="row collapse">
+    <div class="twelve columns main-container"> <!--main container start here-->
+      <div class="blank-banner clearfix">
+        <div class="title-header clearfix">
+          <h1>Interation Designer</h1>
+          </br>
+          <h1>and stratgies</h1>
+        </div>
+        <div class="title-paragraph clearfix">
+          <p>Ability to combine the innovative, perceptive and holistic insights of a designer with the pragmatic</p>
+          </br>
+          <p>and systematic skills of a planner to guide strategic direction in context of business needs, brand</br>
+          </p>
+          <p> intent, design quality and customer values.</p>
+        </div>
+      </div>
+      <div class="row collapse">
+        <div class="content"><!--content start here-->
+          <div class="content-col columns">
+            <div class="mustang centered"> <a href="#"><img src="images/design.png" class="mustang-1" alt="design"/></a> </div>
+            <div class="panel">
+              <h2>design</h2>
+              <p>We do design for Desktop, Phone, Pad and 
+                Web Application</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt bibendum nunc, sit amet euismod sem mollis non. Donec convallis tempor facilisis. Fusce tempus tellus sed elit cursus eleifend. Morbi tortor neque... </p>
+              <a href="#">See our work</a> </div>
+          </div>
+          <div class="content-col columns">
+            <div class="mustang"> <a href="#"><img src="images/developement.png" class="mustang-1" alt="design"/></a> </div>
+            <div class="panel">
+              <h2>developement</h2>
+              <p>We do design for Desktop, Phone, Pad and 
+                Web Application</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt bibendum nunc, sit amet euismod sem mollis non. Donec convallis tempor facilisis. Fusce tempus tellus sed elit cursus eleifend. Morbi tortor neque... </p>
+              <a href="#">See our work</a> </div>
+          </div>
+          <div class="content-col columns">
+            <div class="mustang"> <a href="#"><img src="images/testing.png" class="mustang-1" alt="design"/></a> </div>
+            <div class="panel">
+              <h2>testing</h2>
+              <p>We do design for Desktop, Phone, Pad and 
+                Web Application</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt bibendum nunc, sit amet euismod sem mollis non. Donec convallis tempor facilisis. Fusce tempus tellus sed elit cursus eleifend. Morbi tortor neque... </p>
+              <a href="#">See our work</a> </div>
+          </div>
+        </div>
+        <!--content start here--> 
+      </div>
+      <div class="row collapse gray">
+        <div class="who-col columns">
+          <div class="whoweare">            
+            <h5>A bunch of Young Creative Designers</h5>
+            <p>We like to think of ourselves as a unique group of interaction designers and strategists who design and develop websites and web applications that help guarantee the rapid success of your product. </p>
+            <p>Our team has the creative flair and technical expertise to deliver innovative websites and web applications with a unique user experience and an original exquisiteness setting your product apart from the rest of the crowd.</p>
+            <a href="#">See more</a> </div>
+        </div>
+        <div class="get-col columns">
+          <div class="getintouch">
+            <div class="row">
+              <div class="six columns">
+                <h2>Get in Touch</h2>
+              </div>
+              <div class="three columns">
+                <ul class="social_icon">
+                    <li><a href="#"><img src="images/facebook.jpg" title="facebook"/></a></li>
+                    <li><a href="#"><img src="images/g+.jpg" title="google+"/></a></li>
+                    <li><a href="#"><img src="images/linkdin.jpg" title="linkdin"/></a></li>
+                    <li><a href="#"><img src="images/twitter.jpg" title="twitter"/></a></li>
+                  </ul>
+              </div>
+            </div>
+            
+            <h5>You would love to discuss to any projects you have in your mind</h5>
+            <form>
+              <div class="row">
+                <div class="five columns">
+                  <input type="text" placeholder="Your name"/>
+                </div>
+                <div class="five columns">
+                  <input type="text" placeholder="Email address"/>
+                </div>
+              </div>
+              <textarea type="text" class="textarea" placeholder="Your massege"></textarea>
+              <div class="row">
+                <div class="three columns"> <a href="#" class="button">Send your message</a> </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--main container end here--> 
+  </div>
+  <div class="footer-container"><!--footer-container start here-->
+    <div class="row collapse">
+      <div class="twelve columns black">
+        <div class="site-link"> <!--site link start here-->
+          <ul class="">
+            <li><a href="#"><img src="images/letstap.jpg" title="letstap" width="100" height="36"/></a></li>
+            <li><a href="#"><img src="images/letstoogle.jpg" title="letstoogle" width="100" height="28"/></a></li>
+            <li><a href="#"><img src="images/shoutdesk.jpg" title="shoutdesk" width="100" height="32"/></a></li>
+            <li><a href="#"><img src="images/together.jpg" title="toogether" width="87" height="29"/></a></li>
+            <li><a href="#"><img src="images/donedesk.jpg" title="downdesk" width="126" height="28"/></a></li>
+            <li><a href="#"><img src="images/periacta.jpg" title="periacta" width="125" height="25"/></a></li>
+          </ul>
+        </div>
+        <!--site link end here--> 
+      </div>
+    </div>
+    <div class="row collapse">
+      <div class="six columns">
+        <ul class="sub-nav">
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">work</a></li>
+          <li><a href="#">blog</a></li>
+        </ul>
+      </div>
+      <div class="six columns copyright">
+        <p><span>copyright &copy;</span><a href="#"><img src="images/footer-logo.png" title="vergevision" alt="vergevision" width="108" height="12"/></a></p>
+      </div>
+    </div>
+  </div>
+  <!--footer-container end here--> 
+</div>
+<!--</div>--> 
+
+<!-- Included JS Files --> 
+<script src="javascripts/jquery.min.js"></script> 
+<script src="javascripts/foundation.js"></script>
+</body>
+</html>

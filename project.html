@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]--><head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Welcome to Vergevision</title>
+
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+  <![endif]-->
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+  <script type="text/javascript">
+		var imageArray = Array('image-1.jpg','image-2.jpg','image-3.jpg');
+		
+		function imageSwap()
+		{
+			randomNumber = Math.floor(Math.random()*imageArray.length);		
+			document.getElementById("background").src = "images/"+imageArray[randomNumber];
+		}
+	</script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+
+<style>
+	.main-container .content-col { margin-top: 0px;}
+	.main-container .content { margin-top: 205px;}
+</style>
+<body onLoad="imageSwap()">	
+    <img src="images/image-1.jpg" id="background" alt="background image"/>
+    
+    <div class="pagewrap">    
+    	<div class="header-content"> <!--header content start here-->
+       <div class="header-block"> <!--header block start here-->   
+         <div class="row collapse">
+            <div class="six columns left-header"><!-- left header start here-->
+                <div class="logo">
+                    <h1 title="logo-image"><a href="#"><img src="images/logo.png" alt="logo image" width="269" height="29"/></a></h1>
+                 </div>  
+            </div> <!--left header end here-->
+            <div class="six columns rihgt-header"><!-- right header start here-->
+            	<div class="nav-bar"> <!--navigation start here-->
+                	<ul>
+                    	<li class="active"><a href="index.html">home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="work.html">work</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                    </ul>
+                </div> <!--navigation end here-->
+            </div><!--right header end here-->
+         </div>
+       </div> <!--header block end here-->
+     </div> <!--header content start here-->
+     
+    	<div class="row collapse">
+        <div class="twelve columns main-container"> <!--main container start here-->
+        	<div class="blank-banner clearfix">
+                <div class="title-header clearfix">
+                    <h1>We are a close-knit team</h1>
+                </div>
+                <div class="title-paragraph clearfix">
+                    <p>To do what we want to do in this industry is not going to happen overnight and can't be done by<br/> any one person alone.</p>
+                </div>
+            </div>
+            <div class="row collapse">
+              <div class="content"><!--content start here-->
+                  <div class="side-bar columns"> <!--side bar start here-->
+                  	 <img src="images/bro-lumborgini.jpg" title="lamborghini" alt="lamborghini" width="154" height="178"/>
+                     <h2>Our Work</h2>
+                     <h6>Have a look at some of our works</h6>
+                     <div class="accordion"> 
+                     	<div class="menu-item1"> 
+                     		<h4><a href="#">Design</a></h4> 
+                            <dl class="nice vertical tabs"> 
+                            	<dd class="active"><a href="#simple1">Topic 01</a></dd> 
+                                <dd><a href="#simple2">Topic 02</a></dd> 
+                                <dd><a href="#simple3">Topic 03</a></dd> 
+                                <dd><a href="#simple4">Topic 04</a></dd> 
+                                <dd><a href="#simple5">Topic 05</a></dd>
+                                <dd><a href="#simple6">Topic 06</a></dd>
+                                <dd><a href="#simple7">Topic 07</a></dd> 
+                            </dl> 
+                     	</div>   
+                     	<div class="menu-item"> 
+                        	<h4><a href="#">Developement</a></h4> 
+                            <dl class="nice vertical tabs"> 
+                            	<dd class="active"><a href="#simple1">History</a></dd> 
+                                <dd><a href="#simple2">Meet The Owners</a></dd> 
+                                <dd><a href="#simple3">Awards</a></dd>
+                                <dd><a href="#simple4">Topic 04</a></dd> 
+                                <dd><a href="#simple5">Topic 05</a></dd>
+                                <dd><a href="#simple6">Topic 06</a></dd>
+                                <dd><a href="#simple7">Topic 07</a></dd>  
+                            </dl> 
+                        </div>                        
+                     </div>
+                  </div> <!--side bar end here-->
+                  <div class="work-content columns"> <!--work content start here-->
+                  	<ul class="tabs-content">
+                        <li class="active" id="simple1Tab">
+                            <div class="row collapse">
+                                <div class="web-content" style="border:none">
+                                	<div class="row collapse">
+                                    	<div class="eight columns">
+                                        	<h2>Done desk</h2>
+                                        </div>
+                                		<div class="four columns">
+                                        	<ul class="ford">
+                                                <li><a href="#" class="world"></a></li>
+                                                <li><a href="#" class="photo-left"></a></li>
+                                                <li><a href="#" class="info"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h6>Social task and project management for<br/>business and life</h6>
+                                	<h3>Title of the topic will be here</h3>
+                                    <a href="#"><img src="images/donedesk-blog-page.jpg" class="webimg" alt="blog page" width="673" height="515"/></a>
+                                    <p>Donedesk is social task and project management for business and life. Follows up, keeps discussions attached to their tasks and projects, keeps everything moving forward. Organizes teams, direct assignments, and personal task lists. Full email integration connects you with anyone, even if they don't use Donedesk (yet).</p>
+                                </div>
+                            </div>
+                            <div class="row collapse">
+                                <div class="web-content">
+                                    <div class="row collapse">
+                                    	<div class="eight columns">
+                                        	<h2>Done desk</h2>
+                                        </div>
+                                		<div class="four columns">
+                                        	<ul class="ford">
+                                                <li><a href="#" class="world"></a></li>
+                                                <li><a href="#" class="photo-left"></a></li>
+                                                <li><a href="#" class="info"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h6>Social task and project management for<br/>business and life</h6>
+                                	<h3>Title of the topic will be here</h3>
+                                    <a href="#"><img src="images/donedesk-blog-page.jpg" class="webimg" alt="blog page" width="673" height="515"/></a>
+                                    <p>Donedesk is social task and project management for business and life. Follows up, keeps discussions attached to their tasks and projects, keeps everything moving forward. Organizes teams, direct assignments, and personal task lists. Full email integration connects you with anyone, even if they don't use Donedesk (yet).</p>                                    
+                                </div>
+                            </div>
+                            <div class="row collapse">
+                                <div class="web-content">
+                                   	<div class="row collapse">
+                                    	<div class="eight columns">
+                                        	<h2>Done desk</h2>
+                                        </div>
+                                		<div class="four columns">
+                                        	<ul class="ford">
+                                                <li><a href="#" class="world"></a></li>
+                                                <li><a href="#" class="photo-left"></a></li>
+                                                <li><a href="#" class="info"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h6>Social task and project management for<br/>business and life</h6>
+                                	<h3>Title of the topic will be here</h3>
+                                    <a href="#"><img src="images/donedesk-blog-page.jpg" class="webimg" alt="blog page" width="673" height="515"/></a>
+                                    <p>Donedesk is social task and project management for business and life. Follows up, keeps discussions attached to their tasks and projects, keeps everything moving forward. Organizes teams, direct assignments, and personal task lists. Full email integration connects you with anyone, even if they don't use Donedesk (yet).</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="simple2Tab">
+                            <h2>contact us</h2>
+                            <p>are you serious about your software venture? Do you have can-do and lets-do attitude? Want to be part of together stories? If you have 3 YES for these three questions then find and contact us in together world.</p>
+                            <img src="images/map.jpg" title="map" alt="map image" width="718" height="328"/>
+                        </li>
+                        <li id="simple3Tab">
+                            <h2>complemented us</h2>
+                            <p>are you serious about your software venture? Do you have can-do and lets-do attitude? Want to be part of together stories? If you have 3 YES for these three questions then find and contact us in together world.</p>
+                            <img src="images/complementsite-image.jpg" title="complemented us" alt="complemented image" width="726" height="390"/>
+                        </li>
+                        <li id="simple4Tab">
+                            <h2>camero us</h2>
+                            <p>are you serious about your software venture? Do you have can-do and lets-do attitude? Want to be part of together stories? If you have 3 YES for these three questions then find and contact us in together world.</p>
+                            <img src="images/complementsite-image.jpg" title="complemented us" alt="complemented image" width="726" height="390"/>
+                        </li>
+                        <li id="simple5Tab">
+                            <h2>camero us</h2>
+                            <p>are you serious about your software venture? Do you have can-do and lets-do attitude? Want to be part of together stories? If you have 3 YES for these three questions then find and contact us in together world.</p>
+                            <img src="images/complementsite-image.jpg" title="complemented us" alt="complemented image" width="726" height="390"/>
+                        </li>
+                        <li id="simple6Tab">
+                            <h2>camero us</h2>
+                            <p>are you serious about your software venture? Do you have can-do and lets-do attitude? Want to be part of together stories? If you have 3 YES for these three questions then find and contact us in together world.</p>
+                            <img src="images/complementsite-image.jpg" title="complemented us" alt="complemented image" width="726" height="390"/>
+                        </li>
+                        <li id="simple7Tab">
+                            <h2>camero us</h2>
+                            <p>are you serious about your software venture? Do you have can-do and lets-do attitude? Want to be part of together stories? If you have 3 YES for these three questions then find and contact us in together world.</p>
+                            <img src="images/complementsite-image.jpg" title="complemented us" alt="complemented image" width="726" height="390"/>
+                        </li>
+                        <li id="simple8Tab">
+                            <h2>camero us</h2>
+                            <p>are you serious about your software venture? Do you have can-do and lets-do attitude? Want to be part of together stories? If you have 3 YES for these three questions then find and contact us in together world.</p>
+                            <img src="images/complementsite-image.jpg" title="complemented us" alt="complemented image" width="726" height="390"/>
+                        </li>
+                    </ul>
+                  </div> <!--work content end here-->
+              </div> <!--content start here-->
+            </div>
+            <div class="row collapse gray"> <!--get in touch start here-->
+                <div class="who-col columns">
+                    <div class="whoweare">
+                        <h2>Photostream</h2>
+                        <h5>Have a look at our sweet memories</h5>
+                        <ul class="photostream">
+                            <li><a href="#"><img src="images/photo-1.jpg" title="photo1" alt="photo-1" width="100" height="68"/></a></li>
+                            <li><a href="#"><img src="images/photo-2.jpg" title="photo-2" alt="photo-2" width="100" height="66"/></a></li>
+                            <li><a href="#"><img src="images/photo-3.jpg" title="photo-3" alt="photo-3" width="100" height="66"/></a></li>
+                        </ul>
+                        <ul class="photostream">
+                            <li><a href="#"><img src="images/photo-4.jpg" title="photo-4" alt="photo-4" width="100" height="67"/></a></li>
+                            <li><a href="#"><img src="images/photo-5.jpg" title="photo-5" alt="photo-5" width="100" height="67"/></a></li>
+                            <li><a href="#"><img src="images/photo-6.jpg" title="photo-6" alt="photo-6" width="100" height="66"/></a></li>
+                        </ul>
+                        <a href="#" class="clearfix">See more</a>
+                    </div>                        
+                </div>
+                <div class="get-col columns">
+                   <div class="getintouch">
+                       <h2>Get in Touch</h2>
+                       <h5>You would love to discuss any projects you have in your mind</h5>
+                       <form>
+                          <div class="row">
+                              <div class="five columns">
+                                  <input type="text" placeholder="Your name"/>
+                              </div>
+                              <div class="five columns">
+                                  <input type="text" placeholder="Email address"/>
+                              </div>
+                          </div>
+                          <textarea type="text" class="textarea" placeholder="Your massege"></textarea>
+                          <div class="row">
+                              <div class="three columns">
+                                  <a href="#" class="button">Send your message</a>
+                              </div>
+                              <div class="three columns">
+                                  <ul class="social_icon">
+                                      <li><a href="#"><img src="images/facebook.jpg" title="facebook"/></a></li>
+                                      <li><a href="#"><img src="images/g+.jpg" title="google+"/></a></li>
+                                      <li><a href="#"><img src="images/linkdin.jpg" title="linkdin"/></a></li>
+                                      <li><a href="#"><img src="images/twitter.jpg" title="twitter"/></a></li>
+                                  </ul>
+                              </div>                                   
+                          </div>
+                        </form>                            
+                   </div>
+                </div>
+             </div> <!--get in touch end here-->
+            
+        </div> <!--main container end here-->
+     </div>     
+    	<div class="footer-container"><!--footer-container start here-->     	 
+     	 <div class="row collapse">
+           	<div class="twelve columns black">
+                	<div class="site-link"> <!--site link start here-->
+            			<ul class="">
+                            <li><a href="#"><img src="images/letstap.jpg" title="letstap" width="100" height="36"/></a></li>
+                            <li><a href="#"><img src="images/letstoogle.jpg" title="letstoogle" width="100" height="28"/></a></li>
+                            <li><a href="#"><img src="images/shoutdesk.jpg" title="shoutdesk" width="100" height="32"/></a></li>
+                            <li><a href="#"><img src="images/together.jpg" title="toogether" width="87" height="29"/></a></li>
+                            <li><a href="#"><img src="images/donedesk.jpg" title="downdesk" width="126" height="28"/></a></li>
+                            <li><a href="#"><img src="images/periacta.jpg" title="periacta" width="125" height="25"/></a></li>
+                        </ul>
+                	</div> <!--site link end here-->
+                </div>
+         </div>
+         <div class="row collapse">
+            <div class="six columns">        	
+                <ul class="sub-nav">
+                  <li><a href="#">home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">work</a></li>
+                  <li><a href="#">blog</a></li>
+                </ul> 
+            </div>
+            <div class="six columns copyright">        	
+                <p><span>copyright &copy;</span><a href="#"><img src="images/footer-logo.png" title="vergevision" alt="vergevision" width="108" height="12"/></a></p>
+            </div>
+         </div>
+     </div><!--footer-container end here-->
+    </div>
+
+
+
+  <!-- Included JS Files -->
+  <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/foundation.js"></script>
+</body>
+</html>
